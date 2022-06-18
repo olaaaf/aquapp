@@ -54,7 +54,7 @@ jobs:
           name: python-app
           path: .
       - name: Run script
-        task: PythonScript@0
+        uses: PythonScript@0
         inputs:
           scriptSource: routes.py
       - name: 'Deploy to Azure Web App'
