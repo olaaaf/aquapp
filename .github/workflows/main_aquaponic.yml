@@ -55,8 +55,8 @@ jobs:
           path: .
       - name: Run script
         uses: actions/setup-python@v2
-        with:
-          run: python routes.py
+        run: |
+          python routes.py
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
