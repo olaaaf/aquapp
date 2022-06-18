@@ -60,4 +60,4 @@ jobs:
           app-name: 'aquaponic'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6E324CFF99D746E2AC3F2DB72488F510 }}
-          startup-command: python routes.py
+          startup-command: 'python routes.py'
